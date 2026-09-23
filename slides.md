@@ -12,7 +12,7 @@ transition: fade
 mdc: true
 ---
 
-<style>
+<style global>
 :root {
   --brand-ink: #102033;
   --brand-blue: #2563eb;
@@ -70,7 +70,7 @@ mdc: true
   box-shadow: 0 20px 50px rgba(15, 23, 42, 0.09);
 }
 
-.diagram-large {
+:global(.diagram-large) {
   width: 100%;
   min-height: 58vh;
   display: flex;
@@ -79,14 +79,63 @@ mdc: true
   padding: 1rem 0;
 }
 
-.diagram-large svg {
+:global(.diagram-large .mermaid) {
+  width: 100%;
+  zoom: 1.35;
+  transform-origin: center center;
+}
+
+:global(.flow-diagram) {
+  width: min(90%, 1500px);
+  display: grid;
+  grid-template-columns: 1fr 0.25fr 1.6fr;
+  gap: 1.2rem;
+  align-items: center;
+  margin: 2rem auto 0;
+}
+
+:global(.flow-node) {
+  border: 2px solid #93c5fd;
+  border-radius: 1rem;
+  padding: 1.25rem 1rem;
+  background: white;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 650;
+}
+
+:global(.flow-node.primary) {
+  background: #dbeafe;
+  border-color: #2563eb;
+}
+
+:global(.flow-node.secondary) {
+  background: #ecfeff;
+  border-color: #06b6d4;
+}
+
+:global(.flow-arrow) {
+  color: #2563eb;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+:global(.source-stack) {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+:global(.diagram-large svg) {
   width: 100% !important;
   max-width: 1500px !important;
   max-height: 62vh !important;
   height: auto !important;
 }
 
-.diagram-large foreignObject {
+:global(.diagram-large foreignObject) {
   overflow: visible;
 }
 
@@ -171,16 +220,17 @@ mdc: true
 # People need paths to discover knowledge
 
 <div class="diagram-large">
-
-```mermaid {scale: 1.1}
-flowchart LR
-    Person[New engineer] --> Repository
-    Person --> Documentation
-    Person --> Decisions[Architectural decisions]
-    Person --> Dashboards
-    Person --> Incidents
-```
-
+  <div class="flow-diagram">
+    <div class="flow-node primary">New engineer</div>
+    <div class="flow-arrow">→</div>
+    <div class="source-stack">
+      <div class="flow-node">Repository</div>
+      <div class="flow-node">Documentation</div>
+      <div class="flow-node">Architectural decisions</div>
+      <div class="flow-node">Dashboards</div>
+      <div class="flow-node">Incidents</div>
+    </div>
+  </div>
 </div>
 
 ---
@@ -253,18 +303,19 @@ flowchart LR
 # The context architecture
 
 <div class="diagram-large">
-
-```mermaid {scale: 1.15}
-flowchart TD
-    Task --> Domain
-    Domain --> Service
-    Service --> Code
-    Service --> Runbook
-    Service --> Dashboard
-    Service --> ADR
-    Incident --> Lessons
-```
-
+  <div class="flow-diagram" style="grid-template-columns: 1fr 0.25fr 1.6fr;">
+    <div class="flow-node primary">Task</div>
+    <div class="flow-arrow">→</div>
+    <div class="source-stack">
+      <div class="flow-node secondary">Domain</div>
+      <div class="flow-node secondary">Service</div>
+      <div class="flow-node">Code</div>
+      <div class="flow-node">Runbook</div>
+      <div class="flow-node">Dashboard</div>
+      <div class="flow-node">ADR</div>
+      <div class="flow-node">Incident → Lessons</div>
+    </div>
+  </div>
 </div>
 
 <!-- This is the first technical definition of Context Architecture. Pause here and name the links, not just the sources. -->

@@ -24,15 +24,31 @@ mdc: true
 .slidev-layout {
   background: var(--brand-surface);
   color: var(--brand-ink);
+  padding: 3.5rem 5rem 3rem;
 }
 
-h1, h2, h3 { letter-spacing: -0.03em; }
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3 {
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+}
+
+.slidev-layout h1 {
+  margin-bottom: 1.5rem;
+}
+
+.slidev-layout h2 {
+  margin-bottom: 1.25rem;
+}
 
 .eyebrow {
   color: var(--brand-blue);
   font-size: 0.8em;
   font-weight: 700;
   letter-spacing: 0.12em;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
   text-transform: uppercase;
 }
 
@@ -54,6 +70,40 @@ h1, h2, h3 { letter-spacing: -0.03em; }
   box-shadow: 0 20px 50px rgba(15, 23, 42, 0.09);
 }
 
+.diagram-large {
+  width: 100%;
+  min-height: 58vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.diagram-large svg {
+  width: 100% !important;
+  max-width: 1500px !important;
+  max-height: 62vh !important;
+  height: auto !important;
+}
+
+.diagram-large foreignObject {
+  overflow: visible;
+}
+
+.hero-title {
+  max-width: 10em;
+  font-size: 3.75rem;
+  line-height: 1.02;
+  margin: 0 0 1.25rem;
+}
+
+.hero-subtitle {
+  max-width: 28em;
+  font-size: 1.55rem;
+  line-height: 1.25;
+  margin: 0;
+}
+
 .node {
   display: inline-block;
   border: 1px solid #93c5fd;
@@ -69,13 +119,12 @@ h1, h2, h3 { letter-spacing: -0.03em; }
 
 <!-- Speaker notes: Keep the opening conversational. Establish the new-person analogy before introducing technical vocabulary. -->
 
-# Building AI-Friendly Software Architecture
-
 <div class="eyebrow">A practical architecture for humans and AI agents</div>
 
 <div class="hero-grid">
   <div>
-    <h2>Designing systems that can be understood, explored, and changed safely</h2>
+    <h1 class="hero-title">Building AI-Friendly Software Architecture</h1>
+    <p class="hero-subtitle">Designing systems that can be understood, explored, and changed safely</p>
     <p class="muted">Luiz Schons · Senior Software Engineer</p>
   </div>
   <div class="system-map">
@@ -121,7 +170,9 @@ h1, h2, h3 { letter-spacing: -0.03em; }
 
 # People need paths to discover knowledge
 
-```mermaid {scale: 0.82}
+<div class="diagram-large">
+
+```mermaid {scale: 1.1}
 flowchart LR
     Person[New engineer] --> Repository
     Person --> Documentation
@@ -129,6 +180,8 @@ flowchart LR
     Person --> Dashboards
     Person --> Incidents
 ```
+
+</div>
 
 ---
 
@@ -199,7 +252,9 @@ flowchart LR
 
 # The context architecture
 
-```mermaid {scale: 0.7}
+<div class="diagram-large">
+
+```mermaid {scale: 1.15}
 flowchart TD
     Task --> Domain
     Domain --> Service
@@ -209,6 +264,8 @@ flowchart TD
     Service --> ADR
     Incident --> Lessons
 ```
+
+</div>
 
 <!-- This is the first technical definition of Context Architecture. Pause here and name the links, not just the sources. -->
 
@@ -223,4 +280,3 @@ flowchart TD
 </div>
 
 <p class="text-center muted mt-16">Prototype complete. The full narrative and extended OpenTelemetry section live in the source outline.</p>
-

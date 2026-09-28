@@ -22,7 +22,9 @@ mdc: true
 }
 
 .slidev-layout {
-  background: var(--brand-surface);
+  background:
+    radial-gradient(circle at 92% 8%, rgba(37, 99, 235, 0.08), transparent 26%),
+    linear-gradient(135deg, #ffffff 0%, var(--brand-surface) 100%);
   color: var(--brand-ink);
   padding: 3.5rem 5rem 3rem;
   font-size: 1.25rem;
@@ -38,11 +40,33 @@ mdc: true
 .slidev-layout h1 {
   margin-bottom: 1.5rem;
   font-size: 4.8rem !important;
+  max-width: 18em;
+  position: relative;
+}
+
+.slidev-layout h1::after {
+  content: '';
+  display: block;
+  width: 4rem;
+  height: 0.3rem;
+  margin-top: 1rem;
+  border-radius: 99px;
+  background: var(--brand-blue);
 }
 
 .slidev-layout h2 {
   margin-bottom: 1.25rem;
   font-size: 3.5rem !important;
+}
+
+.slidev-layout p,
+.slidev-layout li {
+  line-height: 1.35;
+}
+
+.slidev-layout li {
+  margin: 0.8rem 0;
+  font-size: 1.35rem;
 }
 
 .eyebrow {
@@ -106,6 +130,7 @@ mdc: true
   text-align: center;
   font-size: 1.8rem;
   font-weight: 650;
+  line-height: 1.15;
 }
 
 :global(.flow-node.primary) {
@@ -128,7 +153,35 @@ mdc: true
 :global(.source-stack) {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.9rem;
+  gap: 1.1rem;
+}
+
+:global(.source-stack .flow-node) {
+  min-height: 5.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:global(.quote-slide) {
+  min-height: 58vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 68rem;
+}
+
+:global(.quote-slide .quote) {
+  font-size: 4.2rem;
+  line-height: 1.08;
+  font-weight: 750;
+  letter-spacing: -0.04em;
+}
+
+:global(.quote-slide .caption) {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: var(--brand-muted);
 }
 
 :global(.decision-flow) {
@@ -271,12 +324,11 @@ mdc: true
 
 ---
 
-# The common diagnosis
+# Model quality is only part of the problem
 
-<div class="h-full flex flex-col justify-center items-center">
-  <p class="text-3xl muted">When an agent makes a mistake, we often say:</p>
-  <h2 class="text-7xl">“The model is not good enough.”</h2>
-  <p class="text-2xl text-blue-600">Sometimes the system simply hides too much context.</p>
+<div class="quote-slide">
+  <p class="quote">“The model is not good enough.”</p>
+  <p class="caption">Sometimes the system simply hides too much context.</p>
 </div>
 
 ---

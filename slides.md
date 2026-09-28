@@ -36,12 +36,12 @@ mdc: true
 
 .slidev-layout h1 {
   margin-bottom: 1.5rem;
-  font-size: 3.2rem !important;
+  font-size: 4.1rem !important;
 }
 
 .slidev-layout h2 {
   margin-bottom: 1.25rem;
-  font-size: 2.6rem !important;
+  font-size: 3rem !important;
 }
 
 .eyebrow {
@@ -103,7 +103,7 @@ mdc: true
   background: white;
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
   text-align: center;
-  font-size: 1.35rem;
+  font-size: 1.6rem;
   font-weight: 650;
 }
 

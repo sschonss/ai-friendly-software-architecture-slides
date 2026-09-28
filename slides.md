@@ -25,6 +25,7 @@ mdc: true
   background: var(--brand-surface);
   color: var(--brand-ink);
   padding: 3.5rem 5rem 3rem;
+  font-size: 1.25rem;
 }
 
 .slidev-layout h1,
@@ -36,12 +37,12 @@ mdc: true
 
 .slidev-layout h1 {
   margin-bottom: 1.5rem;
-  font-size: 4.1rem !important;
+  font-size: 4.8rem !important;
 }
 
 .slidev-layout h2 {
   margin-bottom: 1.25rem;
-  font-size: 3rem !important;
+  font-size: 3.5rem !important;
 }
 
 .eyebrow {
@@ -74,7 +75,7 @@ mdc: true
 
 :global(.diagram-large) {
   width: 100%;
-  min-height: 62vh;
+  min-height: 68vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,7 +89,7 @@ mdc: true
 }
 
 :global(.flow-diagram) {
-  width: min(90%, 1500px);
+  width: min(100%, 1700px);
   display: grid;
   grid-template-columns: 1fr 0.25fr 1.6fr;
   gap: 1.2rem;
@@ -99,11 +100,11 @@ mdc: true
 :global(.flow-node) {
   border: 2px solid #93c5fd;
   border-radius: 1rem;
-  padding: 1.45rem 1.1rem;
+  padding: 1.8rem 1.25rem;
   background: white;
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 650;
 }
 

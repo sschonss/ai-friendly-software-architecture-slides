@@ -331,3 +331,165 @@ mdc: true
 </div>
 
 <p class="text-center muted mt-16">Prototype complete. The full narrative and extended OpenTelemetry section live in the source outline.</p>
+
+---
+
+# The system exists beyond the repository
+
+<div class="diagram-large">
+  <div class="flow-diagram" style="grid-template-columns: 1fr 0.25fr 2fr;">
+    <div class="flow-node primary">Mature system</div>
+    <div class="flow-arrow">→</div>
+    <div class="source-stack">
+      <div class="flow-node">Code</div>
+      <div class="flow-node">Documentation</div>
+      <div class="flow-node">Architectural decisions</div>
+      <div class="flow-node">Tickets and epics</div>
+      <div class="flow-node">Incidents</div>
+      <div class="flow-node">Dashboards and metrics</div>
+    </div>
+  </div>
+</div>
+
+<!-- The point is not that the repository is unimportant. It is that the repository is one source among several. -->
+
+---
+
+# What code leaves implicit
+
+<div class="grid grid-cols-2 gap-16 items-center h-full">
+  <div>
+    <p class="text-6xl font-bold text-blue-600">The code says what.</p>
+    <p class="text-4xl muted">The surrounding context explains why.</p>
+  </div>
+  <div class="space-y-5 text-xl">
+    <div class="p-5 bg-white border-l-4 border-blue-500 rounded-r-xl">Business problem</div>
+    <div class="p-5 bg-white border-l-4 border-cyan-500 rounded-r-xl">Accepted trade-offs</div>
+    <div class="p-5 bg-white border-l-4 border-indigo-500 rounded-r-xl">Operational constraints</div>
+  </div>
+</div>
+
+---
+
+# Context is a network, not a giant document
+
+<div class="grid grid-cols-2 gap-14 items-center h-full">
+  <div class="text-center">
+    <div class="text-8xl text-slate-300">▦</div>
+    <p class="text-2xl muted">One page with everything</p>
+    <p class="text-lg text-red-500">Hard to maintain</p>
+  </div>
+  <div class="text-center">
+    <div class="text-8xl text-blue-600">⌘</div>
+    <p class="text-2xl font-bold">Connected sources</p>
+    <p class="text-lg text-cyan-600">Easy to navigate</p>
+  </div>
+</div>
+
+---
+
+# The trusted index
+
+<div class="grid grid-cols-2 gap-12 items-center h-full">
+  <div class="p-8 bg-slate-900 text-slate-100 rounded-2xl font-mono text-lg leading-relaxed">
+    <div class="text-cyan-300">links.md</div>
+    <div class="mt-4">service: payment-api</div>
+    <div>context: ./context.md</div>
+    <div>decisions: /architecture/payments</div>
+    <div>runbook: /operations/payment-api</div>
+    <div>dashboard: /observability/payments</div>
+  </div>
+  <div>
+    <p class="text-4xl font-bold">An index points to the source of truth.</p>
+    <p class="text-xl muted mt-6">It does not copy every document into one place.</p>
+  </div>
+</div>
+
+---
+
+# Context needs an owner
+
+<div class="grid grid-cols-3 gap-6 mt-20">
+  <div class="text-center">
+    <div class="text-5xl">01</div>
+    <p class="text-xl font-bold">Who owns it?</p>
+  </div>
+  <div class="text-center">
+    <div class="text-5xl">02</div>
+    <p class="text-xl font-bold">When was it updated?</p>
+  </div>
+  <div class="text-center">
+    <div class="text-5xl">03</div>
+    <p class="text-xl font-bold">How do we know it is valid?</p>
+  </div>
+</div>
+
+<p class="text-center text-2xl muted mt-20">Context without a validity signal can be as dangerous as no context.</p>
+
+---
+
+# Architectural decisions explain the “why”
+
+<div class="diagram-large">
+  <div class="flow-diagram" style="grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.8rem;">
+    <div class="flow-node primary">Problem</div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-node">Options</div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-node secondary">Decision</div>
+  </div>
+</div>
+
+<p class="text-center text-2xl muted">The current code shows the result. An ADR preserves the reasoning.</p>
+
+---
+
+# What an ADR preserves
+
+<div class="grid grid-cols-2 gap-10 items-center h-full">
+  <div class="text-6xl font-bold text-blue-600">Decision<br/>history</div>
+  <ul class="text-xl leading-relaxed">
+    <li>The problem that needed to be solved</li>
+    <li>The options that were considered</li>
+    <li>The criteria used to choose</li>
+    <li>The trade-offs that were accepted</li>
+    <li>The expected result</li>
+  </ul>
+</div>
+
+---
+
+# Context should follow the workflow
+
+<div class="diagram-large">
+  <div class="flow-diagram" style="grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.8rem;">
+    <div class="flow-node">Task</div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-node">Decision</div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-node secondary">Code</div>
+  </div>
+  <div class="flow-diagram" style="grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.8rem; margin-top: 0.5rem;">
+    <div class="flow-node">Deployment</div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-node">Observability</div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-node primary">Lessons</div>
+  </div>
+</div>
+
+---
+
+# The new-person test
+
+<p class="text-3xl mb-10">Could a new engineer complete this task without asking for directions?</p>
+
+<div class="grid grid-cols-5 gap-3">
+  <div class="p-4 bg-white rounded-xl border border-slate-200 text-center">What changes?</div>
+  <div class="p-4 bg-white rounded-xl border border-slate-200 text-center">Who owns it?</div>
+  <div class="p-4 bg-white rounded-xl border border-slate-200 text-center">What constrains it?</div>
+  <div class="p-4 bg-white rounded-xl border border-slate-200 text-center">How do we verify it?</div>
+  <div class="p-4 bg-white rounded-xl border border-slate-200 text-center">Where do we investigate?</div>
+</div>
+
+<p class="text-center text-2xl text-blue-600 mt-16">If every answer is “ask someone,” the context architecture needs work.</p>

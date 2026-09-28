@@ -36,10 +36,12 @@ mdc: true
 
 .slidev-layout h1 {
   margin-bottom: 1.5rem;
+  font-size: 3.2rem !important;
 }
 
 .slidev-layout h2 {
   margin-bottom: 1.25rem;
+  font-size: 2.6rem !important;
 }
 
 .eyebrow {
@@ -72,7 +74,7 @@ mdc: true
 
 :global(.diagram-large) {
   width: 100%;
-  min-height: 58vh;
+  min-height: 62vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,11 +99,11 @@ mdc: true
 :global(.flow-node) {
   border: 2px solid #93c5fd;
   border-radius: 1rem;
-  padding: 1.25rem 1rem;
+  padding: 1.45rem 1.1rem;
   background: white;
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
   text-align: center;
-  font-size: 1.15rem;
+  font-size: 1.35rem;
   font-weight: 650;
 }
 
@@ -484,12 +486,12 @@ mdc: true
 
 <p class="text-3xl mb-10">Could a new engineer complete this task without asking for directions?</p>
 
-<div class="grid grid-cols-5 gap-3">
-  <div class="p-4 bg-white rounded-xl border border-slate-200 text-center">What changes?</div>
-  <div class="p-4 bg-white rounded-xl border border-slate-200 text-center">Who owns it?</div>
-  <div class="p-4 bg-white rounded-xl border border-slate-200 text-center">What constrains it?</div>
-  <div class="p-4 bg-white rounded-xl border border-slate-200 text-center">How do we verify it?</div>
-  <div class="p-4 bg-white rounded-xl border border-slate-200 text-center">Where do we investigate?</div>
+<div class="grid grid-cols-2 gap-5">
+  <div class="p-6 bg-white rounded-xl border border-slate-200 text-center text-xl">What changes?</div>
+  <div class="p-6 bg-white rounded-xl border border-slate-200 text-center text-xl">Who owns it?</div>
+  <div class="p-6 bg-white rounded-xl border border-slate-200 text-center text-xl">What constrains it?</div>
+  <div class="p-6 bg-white rounded-xl border border-slate-200 text-center text-xl">How do we verify it?</div>
+  <div class="p-6 bg-white rounded-xl border border-slate-200 text-center text-xl col-span-2">Where do we investigate?</div>
 </div>
 
 <p class="text-center text-2xl text-blue-600 mt-16">If every answer is “ask someone,” the context architecture needs work.</p>

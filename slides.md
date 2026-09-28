@@ -131,6 +131,22 @@ mdc: true
   gap: 0.9rem;
 }
 
+:global(.decision-flow) {
+  width: min(100%, 1700px);
+}
+
+:global(.decision-flow .flow-node) {
+  min-height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.1rem;
+}
+
+:global(.decision-flow .flow-arrow) {
+  font-size: 4.5rem;
+}
+
 :global(.diagram-large svg) {
   width: 100% !important;
   max-width: 1500px !important;
@@ -434,7 +450,7 @@ mdc: true
 # Architectural decisions explain the “why”
 
 <div class="diagram-large">
-  <div class="flow-diagram" style="grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.8rem;">
+  <div class="flow-diagram decision-flow" style="grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.8rem;">
     <div class="flow-node primary">Problem</div>
     <div class="flow-arrow">→</div>
     <div class="flow-node">Options</div>
@@ -443,7 +459,7 @@ mdc: true
   </div>
 </div>
 
-<p class="text-center text-2xl muted">The current code shows the result. An ADR preserves the reasoning.</p>
+<p class="text-center text-3xl muted">The current code shows the result. An ADR preserves the reasoning.</p>
 
 ---
 

@@ -1,0 +1,32 @@
+{"kind":"deck","id":"pr/hh9mm6","name":"Deck"}
+{"kind":"layout","layoutId":"c57f08af-1e48-42cd-aaa2-404760573dd0","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"70e2a4b7-9a69-497a-be17-da5a6fae0aee","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/qlv854","slide":1,"title":"Ferramentas para criar slides bonitos e padronizados","textShapes":18}
+{"kind":"textbox","id":"sh/k3e507i1","slide":1,"text":"Ferramentas para criar slides bonitos e padronizados","textPreview":"Ferramentas para criar slides bonitos e padronizados","textChars":52,"textLines":1,"bbox":[72,48,890,62]}
+{"kind":"textbox","id":"sh/j25o72hw","slide":1,"text":"A escolha depende de quanto você quer automatizar e de quanto controle visual precisa manter","textPreview":"A escolha depende de quanto você quer automatizar e de quanto controle visual precisa manter","textChars":92,"textLines":1,"bbox":[74,114,930,32]}
+{"kind":"shape","id":"sh/i1wnyx0b","slide":1,"bbox":[72,195,320,350]}
+{"kind":"shape","id":"sh/x0nm5szq","slide":1,"bbox":[72,195,320,9]}
+{"kind":"textbox","id":"sh/wze5wni5","slide":1,"text":"CANVA PRO","textPreview":"CANVA PRO","textChars":9,"textLines":1,"bbox":[96,226,260,22]}
+{"kind":"textbox","id":"sh/vy543ihk","slide":1,"text":"Melhor ponto de partida","textPreview":"Melhor ponto de partida","textChars":23,"textLines":1,"bbox":[96,264,270,42]}
+{"kind":"textbox","id":"sh/axwnud0z","slide":1,"text":"Modelos prontos + IA + Brand Kit. Você cria um padrão visual e reaproveita em vários decks.","textPreview":"Modelos prontos + IA + Brand Kit. Você cria um padrão visual e reaproveita em vários decks.","textChars":91,"textLines":1,"bbox":[96,324,270,96]}
+{"kind":"shape","id":"sh/hwr61czu","slide":1,"bbox":[96,467,210,38]}
+{"kind":"textbox","id":"sh/gvy58ri9","slide":1,"text":"Minha recomendação","textPreview":"Minha recomendação","textChars":18,"textLines":1,"bbox":[110,478,190,18]}
+{"kind":"shape","id":"sh/ihkje143","slide":1,"bbox":[440,195,320,350]}
+{"kind":"shape","id":"sh/3it0765o","slide":1,"bbox":[440,195,320,9]}
+{"kind":"textbox","id":"sh/4j21gbm9","slide":1,"text":"BEAUTIFUL.AI","textPreview":"BEAUTIFUL.AI","textChars":12,"textLines":1,"bbox":[464,226,260,22]}
+{"kind":"textbox","id":"sh/5kvi9gnu","slide":1,"text":"Mais consistência","textPreview":"Mais consistência","textChars":17,"textLines":1,"bbox":[464,264,270,42]}
+{"kind":"textbox","id":"sh/utkjah47","slide":1,"text":"Layouts inteligentes que se ajustam sozinhos. Ótimo quando o time precisa seguir regras.","textPreview":"Layouts inteligentes que se ajustam sozinhos. Ótimo quando o time precisa seguir regras.","textChars":88,"textLines":1,"bbox":[464,324,270,96]}
+{"kind":"shape","id":"sh/vet03m5s","slide":1,"bbox":[464,467,210,38]}
+{"kind":"textbox","id":"sh/gf21crmd","slide":1,"text":"Mais “à prova de erro”","textPreview":"Mais “à prova de erro”","textChars":22,"textLines":1,"bbox":[478,478,190,18]}
+{"kind":"shape","id":"sh/hgbi5wni","slide":1,"bbox":[808,195,320,350]}
+{"kind":"shape","id":"sh/ep4jml4b","slide":1,"bbox":[808,195,320,9]}
+{"kind":"textbox","id":"sh/fadkfq5w","slide":1,"text":"GAMMA","textPreview":"GAMMA","textChars":5,"textLines":1,"bbox":[832,226,260,22]}
+{"kind":"textbox","id":"sh/bupg7il8","slide":1,"text":"Mais velocidade","textPreview":"Mais velocidade","textChars":15,"textLines":1,"bbox":[832,264,270,42]}
+{"kind":"textbox","id":"sh/atgfydkn","slide":1,"text":"Você cola um texto ou escreve um prompt e recebe um rascunho visual em poucos minutos.","textPreview":"Você cola um texto ou escreve um prompt e recebe um rascunho visual em poucos minutos.","textChars":86,"textLines":1,"bbox":[832,324,270,96]}
+{"kind":"shape","id":"sh/xw7y9s3e","slide":1,"bbox":[832,467,210,38]}
+{"kind":"textbox","id":"sh/cvyx0n2t","slide":1,"text":"Mais rápido para começar","textPreview":"Mais rápido para começar","textChars":24,"textLines":1,"bbox":[846,478,190,18]}
+{"kind":"textbox","id":"sh/zypgbilk","slide":1,"text":"Padrão simples para repetir","textPreview":"Padrão simples para repetir","textChars":27,"textLines":1,"bbox":[72,595,300,25]}
+{"kind":"textbox","id":"sh/yxgf2xkz","slide":1,"text":"1 prompt → 1 template mestre → 1 revisão de conteúdo → exportar","textPreview":"1 prompt → 1 template mestre → 1 revisão de conteúdo → exportar","textChars":63,"textLines":1,"bbox":[72,626,780,26]}
+{"kind":"textbox","id":"sh/lk7yds3a","slide":1,"text":"Comece com 5 layouts fixos: capa, problema, comparação, processo e conclusão.","textPreview":"Comece com 5 layouts fixos: capa, problema, comparação, processo e conclusão.","textChars":77,"textLines":1,"bbox":[72,663,760,22]}
+{"kind":"textbox","id":"sh/kzyx4n25","slide":1,"text":"Fontes: Canva, Beautiful.ai e Gamma (páginas oficiais consultadas em 28/09/2026)","textPreview":"Fontes: Canva, Beautiful.ai e Gamma (páginas oficiais consultadas em 28/09/2026)","textChars":80,"textLines":1,"bbox":[860,667,350,20]}
+{"kind":"notes","id":"nt/qlv854","slide":1,"text":"Fontes: https://www.canva.com/create/ai-presentations/ | https://www.beautiful.ai/presentations | https://gamma.app/ . Recomendações são uma síntese editorial, não uma comparação exaustiva de preços."}
